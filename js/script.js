@@ -25,7 +25,7 @@ const revealSection = function (entries, observer) {
 };
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0.3,
+  threshold: window.screen.width >= 400 ? 0.3 : 0.1,
 });
 allSections.forEach((section) => {
   sectionObserver.observe(section);
