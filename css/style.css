@@ -383,6 +383,9 @@ span:before {
   .header__resume-btn {
     display: none;
   }
+  .header__resume {
+    display: none;
+  }
 }
 
 .aboutme {
