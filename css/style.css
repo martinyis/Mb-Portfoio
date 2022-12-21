@@ -97,7 +97,7 @@ body {
   background: #020c1b;
 }
 
-[class*="__container"] {
+[class*='__container'] {
   max-width: 1350px;
   margin: 0px auto;
   padding: 0 15px;
@@ -269,7 +269,7 @@ body {
 
 #burger-menu span:before,
 #burger-menu span:after {
-  content: "";
+  content: '';
 }
 
 #burger-menu span:before {
@@ -617,8 +617,8 @@ span:before {
     width: 300px;
   }
   .info__text {
-    font-size: 15px;
-    line-height: 15px;
+    font-size: 18px;
+    line-height: 27px;
   }
   .info__skills {
     font-size: 15px;
@@ -1048,6 +1048,9 @@ span:before {
   .projects__item-info {
     font-size: 15px;
   }
+  .projects__info {
+    padding: 5px 15px;
+  }
 }
 
 .programs__title {
@@ -1136,6 +1139,7 @@ span:before {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+  padding-top: 20px;
 }
 
 .programs__item-technique {
@@ -1211,7 +1215,7 @@ span:before {
 }
 
 .contact__title {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
   font-size: 60px;
@@ -1228,6 +1232,7 @@ span:before {
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
+  padding-left: 30px;
 }
 
 .contact__button {
