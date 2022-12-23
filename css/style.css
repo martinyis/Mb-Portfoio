@@ -234,11 +234,13 @@ body {
   font-size: 23px;
   line-height: 34px;
   color: #64ffda;
+  transition: all 0.3s ease-in-out;
 }
 
 .header__resume-btn:hover {
   background-color: #64ffda;
   color: #020c1b;
+  transform: scale(1.1);
 }
 
 #burger-menu {
