@@ -31,3 +31,13 @@ allSections.forEach((section) => {
   sectionObserver.observe(section);
   section.classList.add('section--hidden');
 });
+
+//===============================================//
+const programsItems = document.querySelectorAll('.programs__item');
+
+programsItems.forEach((programsItem) => {
+  programsItem.addEventListener('click', () => {
+    const websiteLink = programsItem.querySelector('.website');
+    window.location.href = websiteLink.href;
+  });
+});
