@@ -2,6 +2,7 @@ const burgerMenu = document.getElementById('burger-menu');
 const overlay = document.getElementById('menu');
 const body = document.querySelector('body');
 const headerLink = document.querySelectorAll('.header__link');
+const showProgramsBtn = document.querySelector('.programs__btn');
 burgerMenu.addEventListener('click', function () {
   this.classList.toggle('close');
   overlay.classList.toggle('overlay');
@@ -40,4 +41,21 @@ programsItems.forEach((programsItem) => {
     const websiteLink = programsItem.querySelector('.website');
     window.location.href = websiteLink.href;
   });
+});
+
+//====================================Functionality for showing new projects=======================================//
+showProgramsBtn.addEventListener('click', function () {
+  const hiddenPrograms = document.querySelectorAll('.programs-hidden');
+  if (this.textContent === 'Show More') {
+    hiddenPrograms.forEach((hiddenProgram) => {
+      hiddenProgram.classList.remove('hidden');
+    });
+    this.textContent = 'Hide';
+  } else {
+    hiddenPrograms.forEach((hiddenProgram) => {
+      console.log('worked');
+      hiddenProgram.classList.add('hidden');
+    });
+    this.textContent = 'Show More';
+  }
 });

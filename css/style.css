@@ -126,7 +126,9 @@ body {
 .no-scroll {
   overflow: hidden;
 }
-
+.hidden {
+  display: none;
+}
 @-webkit-keyframes myReveal {
   0% {
     opacity: 0;
@@ -1327,5 +1329,22 @@ span:before {
     font-size: 15px;
     line-height: 22px;
     padding: 12px 50px 13px 50px;
+  }
+}
+
+/* New features */
+
+.programs-hidden {
+  animation: slideDown 0.5s;
+}
+
+/* When the button is clicked, show the item */
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-35%);
+  }
+  to {
+    transform: translateY(0);
   }
 }
