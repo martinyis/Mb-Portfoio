@@ -3,6 +3,9 @@ const overlay = document.getElementById('menu');
 const body = document.querySelector('body');
 const headerLink = document.querySelectorAll('.header__link');
 const showProgramsBtn = document.querySelector('.programs__btn');
+
+//============================================Resume Button click functionality=================================
+
 burgerMenu.addEventListener('click', function () {
   this.classList.toggle('close');
   overlay.classList.toggle('overlay');
@@ -15,7 +18,7 @@ headerLink.forEach((item) => {
     burgerMenu.classList.remove('close');
   });
 });
-//Reveal sections==============================================================================
+//=================================Reveal sections effect functionality==============================================================================
 const allSections = document.querySelectorAll('.section');
 const revealSection = function (entries, observer) {
   const [entry] = entries;
@@ -33,7 +36,7 @@ allSections.forEach((section) => {
   section.classList.add('section--hidden');
 });
 
-//===============================================//
+//===============================================Adding a clickable link to project items=================================//
 const programsItems = document.querySelectorAll('.programs__item');
 
 programsItems.forEach((programsItem) => {
